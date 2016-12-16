@@ -18,5 +18,5 @@ for t in T:
     new_y = y + (-m1*x - (m0-m1)/2*(abs(x+1)-abs(x-1)) - e*y + gamma*np.cos(omega*t)) * dt
     ax.plot([x, new_x], [y, new_y], 'b-', linewidth=0.5)
     x, y = new_x, new_y
-
+pl.axis('off')
 pl.show()
