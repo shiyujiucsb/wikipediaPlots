@@ -9,7 +9,7 @@ N, M = 300, 900
 margin = 20
 
 def saveToSVG(nFrames, points, partitions, firmed, trying):
-    f = open('demo_'+str(nFrames)+'.svg', 'w')
+    f = open('demo_'+'0'*(3-len(str(nFrames)))+str(nFrames)+'.svg', 'w')
     f.write("<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">\n")
     for p in points:
         f.write("<circle cx=\"" +str(p[0]+margin)+ "\" cy=\""+ str(N-p[1]+margin) +"\" r=\"5\" fill=\"white\" stroke=\"black\"/>\n")
@@ -64,7 +64,7 @@ def graham(n, points):
             i+=1
     return stack
 
-# TODO: use binary search to speed up
+# TODO: may be improved.
 def tangentPoint(t, hull):
     n = len(hull)
     if t in hull:
@@ -75,9 +75,27 @@ def tangentPoint(t, hull):
         return hull[0]
     if cross(hull[0][0]-t[0], hull[0][1]-t[1], hull[-1][0]-t[0], hull[-1][1]-t[1])<=0 and cross(hull[-1][0]-t[0], hull[-1][1]-t[1], hull[-2][0]-t[0], hull[-2][1]-t[1])>=0:
         return hull[-1]
-    for i in range(1, n-1):
+    low, high = 1, n-2
+    while low+1<high:
+        i = low + (high-low)//2
         if cross(hull[i][0]-t[0], hull[i][1]-t[1], hull[i-1][0]-t[0], hull[i-1][1]-t[1])>=0 and cross(hull[i+1][0]-t[0], hull[i+1][1]-t[1], hull[i][0]-t[0], hull[i][1]-t[1])<=0:
             return hull[i]
+        if cross(hull[i][0]-t[0], hull[i][1]-t[1], hull[i-1][0]-t[0], hull[i-1][1]-t[1])>=0 and cross(hull[i+1][0]-t[0], hull[i+1][1]-t[1], hull[i][0]-t[0], hull[i][1]-t[1])>=0:
+            if cross(hull[i][0]-t[0], hull[i][1]-t[1], hull[low][0]-t[0], hull[low][1]-t[1])<=0:
+                if cross(hull[high+1][0]-t[0], hull[high+1][1]-t[1], hull[high][0]-t[0], hull[high][1]-t[1])>=0 and cross(hull[high][0]-t[0], hull[high][1]-t[1], hull[high-1][0]-t[0], hull[high-1][1]-t[1])>=0:
+                    high = i
+                else: low = i
+            else: low = i
+        else:
+            if cross(hull[i][0]-t[0], hull[i][1]-t[1], hull[low][0]-t[0], hull[low][1]-t[1])>=0:
+                if cross(hull[low+1][0]-t[0], hull[low+1][1]-t[1], hull[low][0]-t[0], hull[low][1]-t[1])<=0 and cross(hull[low][0]-t[0], hull[low][1]-t[1], hull[low-1][0]-t[0], hull[low-1][1]-t[1])<=0:
+                    low = i
+                else: high = i
+            else: high = i
+    for i in range(n):
+        j = (low+i)%n
+        if cross(hull[j][0]-t[0], hull[j][1]-t[1], hull[j-1][0]-t[0], hull[j-1][1]-t[1])>=0 and cross(hull[j+1][0]-t[0], hull[j+1][1]-t[1], hull[j][0]-t[0], hull[j][1]-t[1])<=0:
+            return hull[j]
 
 def javis(s, hulls):
     n = len(hulls)
