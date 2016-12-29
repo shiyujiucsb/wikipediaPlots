@@ -5,7 +5,7 @@ Then transform to bitmaps and convert to GIF.
 '''
 
 # range size
-N = 300
+N = 500
 margin = 20
 
 def norm(px, py):
@@ -37,6 +37,7 @@ def generatePoints(n):
             res += [pt]
     return res
 
+# heuristic: neighbor with radius e.g. N/3
 def generateEdges(n, points):
     import random as r
     r.seed(10)
@@ -78,8 +79,8 @@ def dijkstra(n, points, edges):
     
     return dist, prev
 
-# test 30 points temporarily
-n = 30
+# test 50 points temporarily
+n = 50
 pts = generatePoints(n)
 es = generateEdges(n, pts)
 dijkstra(n, pts, es)

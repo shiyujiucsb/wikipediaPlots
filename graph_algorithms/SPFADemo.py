@@ -5,7 +5,7 @@ Then transform to bitmaps and convert to GIF.
 '''
 
 # range size
-N = 300
+N = 500
 margin = 20
 
 def norm(px, py):
@@ -78,8 +78,8 @@ def spfa(n, points, edges):
     
     return dist, prev
 
-# test 30 points temporarily
-n = 30
+# test 50 points temporarily
+n = 50
 pts = generatePoints(n)
 es = generateEdges(n, pts)
 spfa(n, pts, es)
