@@ -38,7 +38,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="308.65888"
+     inkscape:cx="189.15784"
      inkscape:cy="207.52754"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -477,7 +477,7 @@
          style="font-size:25px;fill:#00ff00;fill-opacity:1">AP</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="425.12344"
        y="402.30811"
        id="text4158-7-0"
@@ -486,12 +486,12 @@
          id="tspan4160-0-9"
          x="425.12344"
          y="402.30811"
-         style="font-size:15px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;">D=8</tspan><tspan
+         style="font-size:15px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">D=2</tspan><tspan
          sodipodi:role="line"
          x="425.12344"
          y="421.05811"
          id="tspan4162-3-1"
-         style="font-size:15px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;">L=8</tspan></text>
+         style="font-size:15px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">L=2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -515,12 +515,12 @@
          id="tspan4160-3"
          x="302.72119"
          y="485.03226"
-         style="font-size:15px;text-align:center;text-anchor:middle">D=9</tspan><tspan
+         style="font-size:15px;text-align:center;text-anchor:middle">D=1</tspan><tspan
          sodipodi:role="line"
          x="302.72119"
          y="503.78226"
          id="tspan4162-26"
-         style="font-size:15px;text-align:center;text-anchor:middle">L=9</tspan></text>
+         style="font-size:15px;text-align:center;text-anchor:middle">L=1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -532,12 +532,12 @@
          id="tspan4160-3-9"
          x="206.46265"
          y="399.59366"
-         style="font-size:15px;text-align:center;text-anchor:middle">D=10</tspan><tspan
+         style="font-size:15px;text-align:center;text-anchor:middle">D=2</tspan><tspan
          sodipodi:role="line"
          x="206.46265"
          y="418.34366"
          id="tspan4162-26-7"
-         style="font-size:15px;text-align:center;text-anchor:middle">L=10</tspan></text>
+         style="font-size:15px;text-align:center;text-anchor:middle">L=2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -549,12 +549,12 @@
          id="tspan4160-3-9-2"
          x="94.003372"
          y="312.4982"
-         style="font-size:15px;text-align:center;text-anchor:middle">D=11</tspan><tspan
+         style="font-size:15px;text-align:center;text-anchor:middle">D=3</tspan><tspan
          sodipodi:role="line"
          x="94.003372"
          y="331.2482"
          id="tspan4162-26-7-9"
-         style="font-size:15px;text-align:center;text-anchor:middle">L=11</tspan></text>
+         style="font-size:15px;text-align:center;text-anchor:middle">L=3</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -566,11 +566,11 @@
          id="tspan4160-3-9-2-8"
          x="119.65331"
          y="170.37708"
-         style="font-size:15px;text-align:center;text-anchor:middle">D=12</tspan><tspan
+         style="font-size:15px;text-align:center;text-anchor:middle">D=4</tspan><tspan
          sodipodi:role="line"
          x="119.65331"
          y="189.12708"
          id="tspan4162-26-7-9-5"
-         style="font-size:15px;text-align:center;text-anchor:middle">L=12</tspan></text>
+         style="font-size:15px;text-align:center;text-anchor:middle">L=4</tspan></text>
   </g>
 </svg>
