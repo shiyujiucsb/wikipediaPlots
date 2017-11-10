@@ -9,8 +9,8 @@ hx <- pnorm(x)
 k <- c(2, 2, 2, 3, 10)
 df <- c(2, 4, 8, 10, 10)
 colors <- c("red", "blue", "grey", "gold", "green", "black")
-labels <- c("m=2 df=2", "m=2 df=4", "m=2 df=8", "m=3 df=10", "n=10 df=10", 
-            "n=10 df=100")
+labels <- c("k=2 df=2", "k=2 df=4", "k=2 df=8", "k=3 df=10", "k=10 df=10", 
+            "k=10 df=100")
 
 dtukey <- function(q, nmeans, df) {
     delta = 0.001
@@ -19,7 +19,7 @@ dtukey <- function(q, nmeans, df) {
 
 # standard normal PDF
 plot(x, dtukey(q=x, nmeans=10, df=100), lwd=2, col="black", 
-     type="l", xlab="x", ylab="CDF F(x)", ylim=c(0, 6e-4))
+     type="l", xlab="x", ylab="PDF f(x)", ylim=c(0, 6e-4))
 
 # studentized range distri.
 for (i in 1:5){
